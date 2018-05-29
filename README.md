@@ -37,3 +37,14 @@ My (Lukas) output:
 -- Build files have been written to: /home/lukas/soft/test/hello_petsc/with_cmake/build
 ```
 
+# install PETSc on my Ubuntu server:
+(not tested yet)
+```
+sudo apt-get install libcr-dev mpich2 mpich2-doc
+sudo apt-get install libblas-dev liblapack-dev
+sudo apt-get install gfortran
+git clone -b maint https://bitbucket.org/petsc/petsc petsc
+./configure --with-cc=gcc --with-cxx=g++ --with-fc=gfortran --with-cuda=1 --download-cusp=1 --with-precision=double --with-clanguage=c
+```
+PETSC_DIR, PETSC_ARCH? 
+

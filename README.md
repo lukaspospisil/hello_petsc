@@ -43,6 +43,6 @@ My (Lukas) output:
 sudo apt-get install gfortran
 git clone -b maint https://bitbucket.org/petsc/petsc petsc
 ./configure --with-cc=gcc --with-cxx=g++ --with-fc=gfortran --download-mpich --download-fblaslapack --with-cuda=1 --download-cusp=1 --with-precision=double
+make PETSC_DIR=/home/lukas/Soft/petsc PETSC_ARCH=arch-linux2-c-debug all
 ```
-PETSC_DIR, PETSC_ARCH? 
 
